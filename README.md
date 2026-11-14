@@ -43,4 +43,8 @@ See [validation](docs/validation.md), [architecture](docs/architecture.md), [API
 
 ## Remaining work
 
-The ledger records the next capabilities and known limitations. These foundations use local token provisioning and SQLite. OAuth/SSO, schema upgrade migrations, source and column access policies, rate limiting and distributed operation remain future work. No product licence has been selected. No customer data or paid service is required for development or tests.
+The ledger records the next capabilities and known limitations. These foundations use local token provisioning and SQLite. OAuth/SSO, schema upgrade migrations, source and column access policies, rate limiting and distributed operation remain future work. Licensed under the [Apache License 2.0](LICENSE); see [notices](THIRD_PARTY_NOTICES.md). No customer data or paid service is required for development or tests.
+
+## Contributing
+
+Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, validation and contribution terms.
