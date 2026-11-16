@@ -21,3 +21,7 @@ Conversation questions use an explicit grammar: `count rows`, `show rows`, `sum 
 Datasets are shared within a tenant. Readers can query; only editors/admins mutate. Conversations and saved results are private to the local user ID, including from other tenant admins. No arbitrary SQL, connectors, model credentials or network data fetching are implemented.
 
 `GET /api/v1/datasets/{id}/export.csv` downloads all stored rows as UTF-8 CSV, including datasets larger than the query's default page. Header order follows the declared schema; booleans use lowercase true/false; quoting preserves commas, quotes, newlines and Unicode. The attachment filename is dataset.csv; X-Dataset-SHA256 identifies the typed source. Reimport with the original columns schema preserves typed values and fingerprint, not original source formatting. All authenticated tenant roles may read; foreign/deleted datasets return 404. Query parameters are rejected. CSV cells preserve raw source values; this is data interchange, not a spreadsheet formula sanitizer.
+
+## AI product direction
+
+Requirement added 2026-11-16: OpenOps must become fully AI enabled, agentic and conversational across its core journeys. The [AI capability and acceptance guide](ai-capabilities.md) defines the required work and evidence. This direction does not change the implementation scope or historical validation results recorded above.
